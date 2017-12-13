@@ -1,0 +1,14 @@
+name: acme-year-revisions
+version: 0
+synopsis: The current year, revision style!
+description: 2001
+build-type: Custom
+cabal-version: 1.10
+
+custom-setup
+  setup-depends: base, Cabal, directory
+
+library
+  hs-source-dirs: src
+  exposed-modules: Acme.Year.Revisions
+  build-depends: base
